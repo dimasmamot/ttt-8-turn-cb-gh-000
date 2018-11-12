@@ -30,6 +30,12 @@ def move(board, index, symbol="X")
   board[index] = symbol
 end
 
+def number_to_index(number)
+  return number-1
+end
+
 def turn(board)
   puts "Please enter 1-9:"
+  number = gets.chomp.strip
+  
 end
