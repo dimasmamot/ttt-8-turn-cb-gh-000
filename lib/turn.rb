@@ -25,3 +25,7 @@ def position_taken?(board, index)
     return true
   end
 end
+
+def move(board, index, symbol="X")
+  board[index] = symbol
+end
