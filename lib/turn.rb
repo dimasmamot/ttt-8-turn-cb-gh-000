@@ -31,7 +31,7 @@ def move(board, index, symbol="X")
 end
 
 def input_to_index(number)
-  return number-1
+  return number.to_i-1
 end
 
 def turn(board)
