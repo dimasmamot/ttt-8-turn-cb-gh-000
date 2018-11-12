@@ -30,14 +30,14 @@ def move(board, index, symbol="X")
   board[index] = symbol
 end
 
-def number_to_index(number)
+def input_to_index(number)
   return number-1
 end
 
 def turn(board)
   puts "Please enter 1-9:"
   number = gets.chomp.strip
-  index = number_to_index(number.to_i)
+  index = input_to_index(number.to_i)
   if valid_move?(board, index)
     move(board, index)
   else
