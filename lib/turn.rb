@@ -32,6 +32,7 @@ end
 
 def input_to_index(input)
   number = input.to_i
+  number = number -1
   return number.to_i-1
 end
 
